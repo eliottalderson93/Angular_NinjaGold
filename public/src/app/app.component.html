@@ -1,0 +1,72 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<section class="hero is-black">
+  <div class="hero-body">
+    <div class="container">
+      <p class="title">Total Gold: {{ gold }}</p>
+    </div>
+  </div>
+</section>
+<section class="columns">
+  <div class="container">
+    <div class="tile is-ancestor">
+      <div class="column">
+        <br>
+        <div class="level">
+          <p class="title">Farm</p>
+        </div>
+        <div class="level">
+          <p>Earn 2-5 Gold</p>
+        </div>
+        <div class="level">
+          <button class="button" (click)="updateGold('farm')">Farm!</button>
+        </div>
+      </div>
+      <div class="column">
+        <br>
+        <div class="level">
+          <p class="title">Cave</p>
+        </div>
+        <div class="level">
+          <p>Earn 5-10 gold</p>
+        </div>
+        <div class="level">
+          <button class="button" (click)="updateGold('cave')">Cave!</button>
+        </div>
+      </div>
+      <div class="column">
+        <br>
+        <div class="level">
+          <p class="title">House</p>
+        </div>
+        <div class="level">
+          <p>Earn 7-15 gold</p>
+        </div>
+        <div class="level">
+          <button class="button" (click)="updateGold('house')">House!</button>
+        </div>
+      </div>
+      <div class="column">
+        <br>
+        <div class="level">
+          <p class="title">Casino</p>
+        </div>
+        <div class="level">
+          <p>Earn or lose up to 100 gold</p>
+        </div>
+        <div class="level">
+          <button class="button" (click)="updateGold('casino')">Casino!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="level">
+      <p class="title">Adventure Log</p>
+    </div>
+    <div class="level" *ngFor="let event of logs">
+      <p>{{event}}</p>
+    </div>
+  </div>
+</section>
